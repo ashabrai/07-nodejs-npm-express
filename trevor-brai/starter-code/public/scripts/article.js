@@ -51,6 +51,7 @@ Article.prototype.insertRecord = function(callback) {
 
       // COMMENT: What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
       // PUT YOUR RESPONSE HERE
+      //If there is a callback it will post the article's' template info. It is not invoked anywhere because it isn't defined anywhere.
       if (callback) callback();
     })
 };

@@ -14,6 +14,12 @@ This is a blog application that creates new articles and pushes them into the bl
 HTML, CSS, Javascript, Handlebars, JSON, Node.js, Express, NPM
 
 ## Change Log
+
+Author: trevorstam
+Date:   Wed Aug 22 11:33:05 2018 -0700
+
+    did the comments
+
 Author: Ashabrai Frauen
 Date:   Wed Aug 22 11:01:05 2018 -0700
 

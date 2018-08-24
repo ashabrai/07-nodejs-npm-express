@@ -3,6 +3,7 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
+const path = require('path');
 
 
 // REVIEW: POST route needs to parse the body passed in with the request.
@@ -11,8 +12,12 @@ app.use(express.urlencoded({ extended: true }),
   express.static('./public')
 );
 
-app.get('public/new.html',(req, res)=>{
-  res.send();//this is to make sure new.html shows up. 
+// app.get('public/new.html',(req, res)=>{
+//   res.send();//this is to make sure new.html shows up. 
+// });
+
+app.get('/new', (req, res) => {
+  res.sendFile(path.join(__dirname + '/public/new.html'));
 });
 
 app.post('/articles', (req, res) => {
